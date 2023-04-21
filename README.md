@@ -1,4 +1,5 @@
 <img src="./src/assets/digistore24logo.png" width="150">
+
 # Digistore Recruiting-Projekt für Frontend Entwickler - Produktliste
 
 ## Beschreibung
