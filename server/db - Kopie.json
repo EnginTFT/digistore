@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "2348R7-R3423",
+      "product": "Sportschuh",
+      "manufacturer": "Nike",
+      "description": "Laufschuh\n\nObermaterial: Kunststoff/Textil\nInnenmaterial: Synthetik\nSohle: Abriebfester Gummi\nSportart: Laufen\nVerschluss: Schnürung\nFarbe: Rot\nAußensohle: Flexibel\nInnensohle: Gepolstert\n",
+      "category": ["Sport", "Schuhe", "Running"],
+      "price": "80,00",
+      "sale": false,
+      "image": "./assets/sneakers.jpg"
+    },
+    {
+      "id": "8PP432-DD342",
+      "product": "Kopfhörer",
+      "manufacturer": "NewComp",
+      "description": "Bluetooth Kopfhörer\n\nBauform: Over Ear\nMaterial: Kunststoff\nAkku-Laufzeit: 30h\nFarbe: Schwarz\nGewicht: 250g\n",
+      "category": ["Kopfhörer", "Bluetooth"],
+      "price": "40,00",
+      "sale": true,
+      "image": "./assets/headphone.jpg"
+    },
+    {
+      "id": "67PT5W-E12TT",
+      "product": "Uhr",
+      "manufacturer": "SportsInc",
+      "description": "Smartwatch\nMaterial: Kunststoff\nAkku-Laufzeit: bis zu 7 Tage\nFarbe: Weiss\nGewicht: 77g\nSonstiges:wasserdicht, Sicherheitsglas",
+      "category": ["Uhr", "Sport"],
+      "price": "110,00",
+      "sale": false,
+      "image": "./assets/watch.jpg"
+    }
+  ]
+}

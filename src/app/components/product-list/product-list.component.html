@@ -1,0 +1,7 @@
+<digistore-ui-product-list
+  [productsTableData]="productTableData$"
+  [currentProduct]="currentProduct$ | async"
+  (selectedRows)="tableSelection = $event"
+  (editProduct)="onEditClick($event)"
+  (viewProduct)="onViewClick($event)"
+></digistore-ui-product-list>

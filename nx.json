@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "digistore-productlist",
+  "npmScope": "digistore",
   "affected": {
     "defaultBase": "master"
   },
@@ -57,5 +57,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "digistore-productlist"
+  "defaultProject": "digistore"
 }

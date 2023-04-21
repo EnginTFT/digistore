@@ -1,0 +1,57 @@
+<form class="edit-form" [formGroup]="productForm">
+  <h2>Product Details</h2>
+  <mat-form-field appearance="fill">
+    <mat-label>Product</mat-label>
+    <input matInput formControlName="product" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Manufacturer</mat-label>
+    <input matInput formControlName="manufacturer" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea
+      class="description"
+      matInput
+      formControlName="description"
+      required
+    ></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Category</mat-label>
+    <mat-select formControlName="category" multiple required>
+      <mat-option value="Sport">Sport</mat-option>
+      <mat-option value="Schuhe">Schuhe</mat-option>
+      <mat-option value="Running">Running</mat-option>
+      <mat-option value="Kopfhörer">Kopfhörer</mat-option>
+      <mat-option value="Bluetooth">Bluetooth</mat-option>
+      <mat-option value="Uhr">Uhr</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="price" required />
+    <span matPrefix>€&nbsp;</span>
+  </mat-form-field>
+
+  <mat-divider></mat-divider>
+
+  <h2>Is this Product on Sale?</h2>
+  <mat-checkbox id="sale" formControlName="sale">Sale</mat-checkbox>
+
+  <mat-divider></mat-divider>
+
+  <h2>Product Image</h2>
+  <div class="image-container">
+    <img class="current-image" src="{{ productForm.get('image')?.value }}" />
+  </div>
+
+  <mat-divider></mat-divider>
+</form>
+<div class="button-bar">
+  <button mat-raised-button color="basic" (click)="onBack()">back</button>
+</div>

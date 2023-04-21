@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  .table-cell-thumbnail {
+    display: flex;
+    align-self: center;
+    max-width: 80%;
+    height: auto;
+    margin: 4px 0px 4px 0px;
+  }
+}
