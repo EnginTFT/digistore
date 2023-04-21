@@ -26,9 +26,13 @@ und in einer Bearbeitungsfunktion bearbeiten können. Für die Umsetzung soll An
 Ich habe einen json-server aufgesetzt um ein Backend zu simulieren.
 Unter server/db.json findet man die "Datenbank". Es ist möglich einträge zu bearbeiten, neue zu erstellen und vorhandene abzurufen (GET,POST,PUT).
 Der Server kann mit einem npm script gestartet werden. Dafür einfach den folgenden Befehl ausführen:
+
 `npm run server:start`
+
 Anschließend kann die Anwendung, in einem neuen Terminal, mit
+
 `nx serve`
+
 gestartet werden.
 
 ### Aufbau
