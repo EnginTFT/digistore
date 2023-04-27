@@ -35,14 +35,16 @@ export class ProductEditComponent implements OnInit {
       category: new FormControl(product.category, Validators.required),
       price: new FormControl(product.price, [
         Validators.required,
-        Validators.pattern(/\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})/g),
+        Validators.pattern(/^\d+(,\d{1,2})?$/),
       ]),
       sale: new FormControl(product.sale),
       image: new FormControl(product.image, Validators.required),
     });
   }
   onSubmit() {
-    this.submitClick.emit(this.productForm.value);
+    if (this.productForm.valid) {
+      this.submitClick.emit(this.productForm.value);
+    }
   }
   onBack() {
     this.backClick.emit();

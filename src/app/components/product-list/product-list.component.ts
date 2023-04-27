@@ -21,13 +21,25 @@ export class ProductListComponent implements OnInit {
   );
 
   tableSelection: ProductListTableRow[] = [];
-
+  emptyCurrentProduct: Product = {
+    id: '',
+    product: '',
+    manufacturer: '',
+    description: '',
+    category: [''],
+    price: '',
+    sale: false,
+    image: '',
+  };
   constructor(
     private readonly _store$: Store,
     private readonly _router: Router
   ) {}
 
   ngOnInit(): void {
+    this._store$.dispatch(
+      ProductListAction.setCurrentProduct({ product: this.emptyCurrentProduct })
+    );
     this._store$.dispatch(ProductListAction.getProductList());
   }
 

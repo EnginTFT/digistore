@@ -79,11 +79,19 @@
       accept=".jpg,.png,.gif"
     />
   </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="button-bar">
+    <button mat-raised-button color="basic" (click)="onBack()">back</button>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="!productForm.valid"
+      (click)="onSubmit()"
+    >
+      submit
+    </button>
+  </div>
 </form>
-
-<mat-divider></mat-divider>
-
-<div class="button-bar">
-  <button mat-raised-button color="basic" (click)="onBack()">back</button>
-  <button mat-raised-button color="primary" (click)="onSubmit()">submit</button>
-</div>
